@@ -30,13 +30,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Dashboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4F-Kv-i6A">
-                                <rect key="frame" x="223.5" y="186" width="321.5" height="33"/>
+                                <rect key="frame" x="238" y="186" width="358.5" height="33"/>
                                 <fontDescription key="fontDescription" name="KGMissKindergarten" family="KG Miss Kindergarten" pointSize="37"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHN-JV-erG">
-                                <rect key="frame" x="202" y="272" width="364" height="150"/>
+                                <rect key="frame" x="202" y="272" width="430" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="430" id="Apd-2p-Z3y"/>
                                     <constraint firstAttribute="height" constant="150" id="e2s-Hm-Gq6"/>
@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="MMV-vn-KS1">
-                                <rect key="frame" x="202" y="481" width="364" height="150"/>
+                                <rect key="frame" x="202" y="481" width="430" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="430" id="S0I-Xg-Zeb"/>
                                     <constraint firstAttribute="height" constant="150" id="cm3-LF-V8J"/>
@@ -65,7 +65,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="elloquent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iji-ns-HoU">
-                                <rect key="frame" x="53" y="71" width="662" height="107"/>
+                                <rect key="frame" x="53" y="71" width="728" height="107"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="107" id="snk-A1-cyR"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="107" id="yBZ-eK-Dde"/>
@@ -75,7 +75,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHq-rA-FYI">
-                                <rect key="frame" x="202" y="708" width="364" height="150"/>
+                                <rect key="frame" x="202" y="708" width="430" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="430" id="wNO-eK-E3r"/>
                                     <constraint firstAttribute="height" constant="150" id="zmQ-Cw-BoU"/>
@@ -797,7 +797,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqe-7R-Kss">
-                                <rect key="frame" x="188" y="297" width="176.5" height="89"/>
+                                <rect key="frame" x="188" y="297" width="149" height="89"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="89" id="rWf-WF-lue"/>
                                 </constraints>
@@ -1465,29 +1465,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Waiting Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmV-EJ-vG8">
-                                <rect key="frame" x="276" y="582" width="216" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="KGMissKindergarten" family="KG Miss Kindergarten" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please wait for your classmates to finish!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCV-5F-Skn">
-                                <rect key="frame" x="71" y="628" width="627" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="KGMissKindergarten" family="KG Miss Kindergarten" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time left:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekJ-mq-7dr">
-                                <rect key="frame" x="258" y="676" width="144" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="KGMissKindergarten" family="KG Miss Kindergarten" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;time remaining&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXL-jo-61a">
-                                <rect key="frame" x="410" y="675" width="243" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Submitting Drawing..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmV-EJ-vG8">
+                                <rect key="frame" x="234" y="580" width="304" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="KGMissKindergarten" family="KG Miss Kindergarten" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -1499,13 +1478,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="0cP-Mm-tA5"/>
                     <connections>
-                        <outlet property="waitLabel" destination="tXL-jo-61a" id="KB7-hw-FY5"/>
                         <segue destination="Cta-Le-gbH" kind="presentation" identifier="guessDrawing" id="WRu-Ks-pbA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ky-CL-Lxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2739.5683453237411" y="49.640287769784173"/>
+            <point key="canvasLocation" x="2739.0625" y="49.21875"/>
         </scene>
     </scenes>
     <resources>
@@ -1526,7 +1504,7 @@
         <image name="lightturq" width="504" height="360"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fsM-Ko-hGv"/>
+        <segue reference="WRu-Ks-pbA"/>
         <segue reference="ZeT-Ek-1Rc"/>
         <segue reference="OS8-lF-M2u"/>
     </inferredMetricsTieBreakers>

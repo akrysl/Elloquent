@@ -40,7 +40,7 @@ class GuessDoodleViewController: UIViewController {
     var i = 0
     var n = 0
     var word = ""
-    
+    var numGuesses = 1
 
 
     override func viewDidLoad() {
@@ -184,6 +184,8 @@ class GuessDoodleViewController: UIViewController {
     }
     
     @IBAction func nextDrawing(_ sender: Any) {
+        numGuesses += 1
+        playerInput.text = ""
         if (i < players.count - 1){
             i += 1
         }
@@ -196,7 +198,7 @@ class GuessDoodleViewController: UIViewController {
         if (currentUser.objectId != players[i]){
             getVocab(playersIndex: i)
         }
-        if (i == players.count - 1)
+        if (i == players.count - 1 || numGuesses == 3)
         {
             nextDrawing.isHidden = true
             nextDrawing.isEnabled = false
@@ -207,7 +209,7 @@ class GuessDoodleViewController: UIViewController {
     
     @IBAction func checkPlayerSubmission(_ sender: Any) {
         
-        if (currentUser.objectId == players[i] && i < (players.count - 1)) {
+        if (currentUser.objectId == players[i] && i < (players.count-1)) {
             i += 1
         }
         
@@ -222,19 +224,18 @@ class GuessDoodleViewController: UIViewController {
         if userSubmission == "\(String(describing: testString))" {
             displayResult.isHidden = false
             displayResult.text = "Correct Answer"
-            playerInput.text = ""
         }
         else{
             displayResult.isHidden = false
             displayResult.text = "Incorrect Answer"
-            playerInput.text = ""
             correctVocab.isHidden = false
             correctVocab.text = " The correct answer was: " + word
         }
-        if (i == players.count - 1)
+        if(numGuesses == 3)
         {
             viewScore.isHidden = false
             viewScore.isEnabled = true
+            numGuesses = 1
         }
         
     }

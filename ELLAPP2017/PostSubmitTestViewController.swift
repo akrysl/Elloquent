@@ -11,7 +11,6 @@ import Parse
 
 class PostSubmitTestViewController: UIViewController {
     
-    @IBOutlet weak var waitLabel: UILabel!
     
     var waitInt = 10
     var waitTimer = Timer()
@@ -29,9 +28,10 @@ class PostSubmitTestViewController: UIViewController {
 
         waitTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(PostSubmitTestViewController.waitCount), userInfo: nil, repeats: true)
         
-        _ = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(timeToMoveOn), userInfo: nil, repeats: false)
+        _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timeToMoveOn), userInfo: nil, repeats: false)
         
         print("post submit test view controller screen")
+        timeToMoveOn()
 
 //        waitForPlayers()
 //        beforeUpdateTimer = Timer.scheduledTimer(timeInterval: 15, target: self, selector: #selector(PostSubmitTestViewController.waitForPlayers), userInfo: nil, repeats: true)
@@ -98,7 +98,6 @@ class PostSubmitTestViewController: UIViewController {
     @objc func waitCount()
     {
         waitInt -= 1
-        waitLabel.text = String(waitInt)
         if (waitInt == 0)
         {
             waitTimer.invalidate()
