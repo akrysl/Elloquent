@@ -1,0 +1,6 @@
+framework module Pods_ELLAPP2017 {
+  umbrella header "Pods-ELLAPP2017-umbrella.h"
+
+  export *
+  module * { export * }
+}

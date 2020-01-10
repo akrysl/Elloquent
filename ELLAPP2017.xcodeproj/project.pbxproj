@@ -1,0 +1,876 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AE826D93F96B470DF9B8844 /* Pods_ELLAPP2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3D24B91486BBE274855B39 /* Pods_ELLAPP2017.framework */; };
+		3C9ABA122229F18F00174FA0 /* PostSubmitTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9ABA0D2229F18800174FA0 /* PostSubmitTestViewController.swift */; };
+		3C9ABA132229F18F00174FA0 /* PlayerScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9ABA0E2229F18A00174FA0 /* PlayerScoresViewController.swift */; };
+		3C9ABA142229F18F00174FA0 /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9ABA0F2229F18B00174FA0 /* LobbyViewController.swift */; };
+		3C9ABA152229F18F00174FA0 /* GuessDoodleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9ABA102229F18D00174FA0 /* GuessDoodleViewController.swift */; };
+		3C9ABA162229F18F00174FA0 /* WaitForPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9ABA112229F18E00174FA0 /* WaitForPlayerViewController.swift */; };
+		47686057899A168696446453 /* Pods_ELLAPP2017UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53FC9433B174B33FECC861A4 /* Pods_ELLAPP2017UITests.framework */; };
+		613AB4907F58305C82D4B236 /* Pods_ELLAPP2017Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C812669C6C8C7735CEF4D3 /* Pods_ELLAPP2017Tests.framework */; };
+		BA1B5E331FD64CAB004CADD6 /* TeacherDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B5E321FD64CAB004CADD6 /* TeacherDashboardViewController.swift */; };
+		BA330D05218F0D590076325F /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330CEE218F0D580076325F /* Books.swift */; };
+		BA330D06218F0D590076325F /* GlobalLibraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330CEF218F0D580076325F /* GlobalLibraryTableViewCell.swift */; };
+		BA330D07218F0D590076325F /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330CF0218F0D580076325F /* BookCollectionViewCell.swift */; };
+		BA330D08218F0D590076325F /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330CF1218F0D580076325F /* Database.swift */; };
+		BA330D09218F0D590076325F /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330CF2218F0D580076325F /* Results.swift */; };
+		BA330D0A218F0D590076325F /* StudentInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330CF3218F0D580076325F /* StudentInfoViewController.swift */; };
+		BA330D0B218F0D590076325F /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330CF4218F0D580076325F /* StudentTableViewCell.swift */; };
+		BA330D0C218F0D590076325F /* DoodleGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330CF5218F0D580076325F /* DoodleGameViewController.swift */; };
+		BA330D0D218F0D590076325F /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330CF6218F0D580076325F /* Users.swift */; };
+		BA330D0E218F0D590076325F /* VocabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330CF7218F0D580076325F /* VocabTableViewCell.swift */; };
+		BA330D0F218F0D590076325F /* LocalLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330CF8218F0D580076325F /* LocalLibraryViewController.swift */; };
+		BA330D10218F0D590076325F /* KGWhattheTeacherWants.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA330CF9218F0D580076325F /* KGWhattheTeacherWants.ttf */; };
+		BA330D11218F0D590076325F /* ManageClassesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330CFA218F0D580076325F /* ManageClassesTableViewCell.swift */; };
+		BA330D12218F0D590076325F /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330CFB218F0D580076325F /* BooksViewController.swift */; };
+		BA330D13218F0D590076325F /* BookInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330CFC218F0D580076325F /* BookInfoViewController.swift */; };
+		BA330D14218F0D590076325F /* GlobalLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330CFD218F0D580076325F /* GlobalLibraryViewController.swift */; };
+		BA330D15218F0D590076325F /* KGMissKindergarten.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA330CFE218F0D580076325F /* KGMissKindergarten.ttf */; };
+		BA330D16218F0D590076325F /* LocalLibraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330CFF218F0D580076325F /* LocalLibraryTableViewCell.swift */; };
+		BA330D17218F0D590076325F /* Classrooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330D00218F0D590076325F /* Classrooms.swift */; };
+		BA330D18218F0D590076325F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330D01218F0D590076325F /* Book.swift */; };
+		BA330D19218F0D590076325F /* KGDefyingGravityBounce.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA330D02218F0D590076325F /* KGDefyingGravityBounce.ttf */; };
+		BA330D1A218F0D590076325F /* ManageClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330D03218F0D590076325F /* ManageClassesViewController.swift */; };
+		BA330D1B218F0D590076325F /* ManageProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA330D04218F0D590076325F /* ManageProfileViewController.swift */; };
+		BA95528A1FBBAA4E00363502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9552891FBBAA4E00363502 /* AppDelegate.swift */; };
+		BA95528F1FBBAA4E00363502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA95528D1FBBAA4E00363502 /* Main.storyboard */; };
+		BA9552911FBBAA4E00363502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9552901FBBAA4E00363502 /* Assets.xcassets */; };
+		BA9552941FBBAA4E00363502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9552921FBBAA4E00363502 /* LaunchScreen.storyboard */; };
+		BA95529F1FBBAA4E00363502 /* ELLAPP2017Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95529E1FBBAA4E00363502 /* ELLAPP2017Tests.swift */; };
+		BA9552AA1FBBAA4E00363502 /* ELLAPP2017UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9552A91FBBAA4E00363502 /* ELLAPP2017UITests.swift */; };
+		BA9552BF1FBC31F100363502 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9552BE1FBC31E800363502 /* AudioToolbox.framework */; };
+		BA9552C81FBC328C00363502 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9552C71FBC328C00363502 /* libz.tbd */; };
+		BA9552CA1FBC32A600363502 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9552C91FBC32A600363502 /* libsqlite3.tbd */; };
+		BA9552CC1FBDFDC500363502 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9552CB1FBDFDC500363502 /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA95529B1FBBAA4E00363502 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA95527E1FBBAA4E00363502 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA9552851FBBAA4E00363502;
+			remoteInfo = ELLAPP2017;
+		};
+		BA9552A61FBBAA4E00363502 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA95527E1FBBAA4E00363502 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA9552851FBBAA4E00363502;
+			remoteInfo = ELLAPP2017;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25C91467A78CA459289262DC /* Pods-ELLAPP2017UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELLAPP2017UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELLAPP2017UITests/Pods-ELLAPP2017UITests.release.xcconfig"; sourceTree = "<group>"; };
+		35EE3C3EB0C10B1E8CAFDFB5 /* Pods-ELLAPP2017UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELLAPP2017UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELLAPP2017UITests/Pods-ELLAPP2017UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C9ABA0D2229F18800174FA0 /* PostSubmitTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostSubmitTestViewController.swift; sourceTree = "<group>"; };
+		3C9ABA0E2229F18A00174FA0 /* PlayerScoresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerScoresViewController.swift; sourceTree = "<group>"; };
+		3C9ABA0F2229F18B00174FA0 /* LobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
+		3C9ABA102229F18D00174FA0 /* GuessDoodleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessDoodleViewController.swift; sourceTree = "<group>"; };
+		3C9ABA112229F18E00174FA0 /* WaitForPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitForPlayerViewController.swift; sourceTree = "<group>"; };
+		53FC9433B174B33FECC861A4 /* Pods_ELLAPP2017UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELLAPP2017UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C25ED22B8FAEFA545A95917 /* Pods-ELLAPP2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELLAPP2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELLAPP2017/Pods-ELLAPP2017.release.xcconfig"; sourceTree = "<group>"; };
+		77BAB7F6BC4C23658DAEC090 /* Pods-ELLAPP2017Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELLAPP2017Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELLAPP2017Tests/Pods-ELLAPP2017Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2D51286E61CA5383FB8C04E /* Pods-ELLAPP2017Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELLAPP2017Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELLAPP2017Tests/Pods-ELLAPP2017Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BA1B5E321FD64CAB004CADD6 /* TeacherDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherDashboardViewController.swift; sourceTree = "<group>"; };
+		BA330CEE218F0D580076325F /* Books.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
+		BA330CEF218F0D580076325F /* GlobalLibraryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalLibraryTableViewCell.swift; sourceTree = "<group>"; };
+		BA330CF0218F0D580076325F /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA330CF1218F0D580076325F /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		BA330CF2218F0D580076325F /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		BA330CF3218F0D580076325F /* StudentInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentInfoViewController.swift; sourceTree = "<group>"; };
+		BA330CF4218F0D580076325F /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		BA330CF5218F0D580076325F /* DoodleGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoodleGameViewController.swift; sourceTree = "<group>"; };
+		BA330CF6218F0D580076325F /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		BA330CF7218F0D580076325F /* VocabTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VocabTableViewCell.swift; sourceTree = "<group>"; };
+		BA330CF8218F0D580076325F /* LocalLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalLibraryViewController.swift; sourceTree = "<group>"; };
+		BA330CF9218F0D580076325F /* KGWhattheTeacherWants.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KGWhattheTeacherWants.ttf; sourceTree = "<group>"; };
+		BA330CFA218F0D580076325F /* ManageClassesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageClassesTableViewCell.swift; sourceTree = "<group>"; };
+		BA330CFB218F0D580076325F /* BooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
+		BA330CFC218F0D580076325F /* BookInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookInfoViewController.swift; sourceTree = "<group>"; };
+		BA330CFD218F0D580076325F /* GlobalLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalLibraryViewController.swift; sourceTree = "<group>"; };
+		BA330CFE218F0D580076325F /* KGMissKindergarten.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KGMissKindergarten.ttf; sourceTree = "<group>"; };
+		BA330CFF218F0D580076325F /* LocalLibraryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalLibraryTableViewCell.swift; sourceTree = "<group>"; };
+		BA330D00218F0D590076325F /* Classrooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classrooms.swift; sourceTree = "<group>"; };
+		BA330D01218F0D590076325F /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		BA330D02218F0D590076325F /* KGDefyingGravityBounce.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KGDefyingGravityBounce.ttf; sourceTree = "<group>"; };
+		BA330D03218F0D590076325F /* ManageClassesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageClassesViewController.swift; sourceTree = "<group>"; };
+		BA330D04218F0D590076325F /* ManageProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageProfileViewController.swift; sourceTree = "<group>"; };
+		BA9552861FBBAA4E00363502 /* ELLAPP2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELLAPP2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA9552891FBBAA4E00363502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA95528E1FBBAA4E00363502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA9552901FBBAA4E00363502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA9552931FBBAA4E00363502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA9552951FBBAA4E00363502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA95529A1FBBAA4E00363502 /* ELLAPP2017Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ELLAPP2017Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA95529E1FBBAA4E00363502 /* ELLAPP2017Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELLAPP2017Tests.swift; sourceTree = "<group>"; };
+		BA9552A01FBBAA4E00363502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA9552A51FBBAA4E00363502 /* ELLAPP2017UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ELLAPP2017UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA9552A91FBBAA4E00363502 /* ELLAPP2017UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELLAPP2017UITests.swift; sourceTree = "<group>"; };
+		BA9552AB1FBBAA4E00363502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA9552BE1FBC31E800363502 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BA9552C01FBC322300363502 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BA9552C11FBC323300363502 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BA9552C21FBC324200363502 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BA9552C31FBC324E00363502 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BA9552C41FBC325B00363502 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BA9552C51FBC327100363502 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		BA9552C61FBC327D00363502 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BA9552C71FBC328C00363502 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BA9552C91FBC32A600363502 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		BA9552CB1FBDFDC500363502 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CD3D24B91486BBE274855B39 /* Pods_ELLAPP2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELLAPP2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDA6D025772236A7FD9BA9B /* Pods-ELLAPP2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELLAPP2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELLAPP2017/Pods-ELLAPP2017.debug.xcconfig"; sourceTree = "<group>"; };
+		D2C812669C6C8C7735CEF4D3 /* Pods_ELLAPP2017Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELLAPP2017Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA9552831FBBAA4E00363502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9552CA1FBC32A600363502 /* libsqlite3.tbd in Frameworks */,
+				BA9552BF1FBC31F100363502 /* AudioToolbox.framework in Frameworks */,
+				BA9552C81FBC328C00363502 /* libz.tbd in Frameworks */,
+				1AE826D93F96B470DF9B8844 /* Pods_ELLAPP2017.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9552971FBBAA4E00363502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613AB4907F58305C82D4B236 /* Pods_ELLAPP2017Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9552A21FBBAA4E00363502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47686057899A168696446453 /* Pods_ELLAPP2017UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28A50F2399EDA2A09FA60306 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEDA6D025772236A7FD9BA9B /* Pods-ELLAPP2017.debug.xcconfig */,
+				5C25ED22B8FAEFA545A95917 /* Pods-ELLAPP2017.release.xcconfig */,
+				77BAB7F6BC4C23658DAEC090 /* Pods-ELLAPP2017Tests.debug.xcconfig */,
+				A2D51286E61CA5383FB8C04E /* Pods-ELLAPP2017Tests.release.xcconfig */,
+				35EE3C3EB0C10B1E8CAFDFB5 /* Pods-ELLAPP2017UITests.debug.xcconfig */,
+				25C91467A78CA459289262DC /* Pods-ELLAPP2017UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		36D7218BB568962EE37B92E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA9552C91FBC32A600363502 /* libsqlite3.tbd */,
+				BA9552C71FBC328C00363502 /* libz.tbd */,
+				BA9552C61FBC327D00363502 /* SystemConfiguration.framework */,
+				BA9552C51FBC327100363502 /* StoreKit.framework */,
+				BA9552C41FBC325B00363502 /* Security.framework */,
+				BA9552C31FBC324E00363502 /* QuartzCore.framework */,
+				BA9552C21FBC324200363502 /* CoreLocation.framework */,
+				BA9552C11FBC323300363502 /* CoreGraphics.framework */,
+				BA9552C01FBC322300363502 /* CFNetwork.framework */,
+				BA9552BE1FBC31E800363502 /* AudioToolbox.framework */,
+				CD3D24B91486BBE274855B39 /* Pods_ELLAPP2017.framework */,
+				D2C812669C6C8C7735CEF4D3 /* Pods_ELLAPP2017Tests.framework */,
+				53FC9433B174B33FECC861A4 /* Pods_ELLAPP2017UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CFE6F46235FA7700028A50A /* Payload */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Payload;
+			sourceTree = "<group>";
+		};
+		BA95527D1FBBAA4E00363502 = {
+			isa = PBXGroup;
+			children = (
+				3CFE6F46235FA7700028A50A /* Payload */,
+				BA9552881FBBAA4E00363502 /* ELLAPP2017 */,
+				BA95529D1FBBAA4E00363502 /* ELLAPP2017Tests */,
+				BA9552A81FBBAA4E00363502 /* ELLAPP2017UITests */,
+				BA9552871FBBAA4E00363502 /* Products */,
+				36D7218BB568962EE37B92E9 /* Frameworks */,
+				28A50F2399EDA2A09FA60306 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		BA9552871FBBAA4E00363502 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA9552861FBBAA4E00363502 /* ELLAPP2017.app */,
+				BA95529A1FBBAA4E00363502 /* ELLAPP2017Tests.xctest */,
+				BA9552A51FBBAA4E00363502 /* ELLAPP2017UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA9552881FBBAA4E00363502 /* ELLAPP2017 */ = {
+			isa = PBXGroup;
+			children = (
+				BA330D01218F0D590076325F /* Book.swift */,
+				BA330CF0218F0D580076325F /* BookCollectionViewCell.swift */,
+				BA330CFC218F0D580076325F /* BookInfoViewController.swift */,
+				BA330CEE218F0D580076325F /* Books.swift */,
+				BA330CFB218F0D580076325F /* BooksViewController.swift */,
+				BA330D00218F0D590076325F /* Classrooms.swift */,
+				BA330CF1218F0D580076325F /* Database.swift */,
+				BA330CF5218F0D580076325F /* DoodleGameViewController.swift */,
+				BA330CEF218F0D580076325F /* GlobalLibraryTableViewCell.swift */,
+				BA330CFD218F0D580076325F /* GlobalLibraryViewController.swift */,
+				BA330D02218F0D590076325F /* KGDefyingGravityBounce.ttf */,
+				BA330CFE218F0D580076325F /* KGMissKindergarten.ttf */,
+				BA330CF9218F0D580076325F /* KGWhattheTeacherWants.ttf */,
+				BA330CFF218F0D580076325F /* LocalLibraryTableViewCell.swift */,
+				BA330CF8218F0D580076325F /* LocalLibraryViewController.swift */,
+				BA330CFA218F0D580076325F /* ManageClassesTableViewCell.swift */,
+				BA330D03218F0D590076325F /* ManageClassesViewController.swift */,
+				BA330D04218F0D590076325F /* ManageProfileViewController.swift */,
+				BA330CF2218F0D580076325F /* Results.swift */,
+				BA330CF3218F0D580076325F /* StudentInfoViewController.swift */,
+				BA330CF4218F0D580076325F /* StudentTableViewCell.swift */,
+				BA330CF6218F0D580076325F /* Users.swift */,
+				3C9ABA102229F18D00174FA0 /* GuessDoodleViewController.swift */,
+				3C9ABA0F2229F18B00174FA0 /* LobbyViewController.swift */,
+				3C9ABA0E2229F18A00174FA0 /* PlayerScoresViewController.swift */,
+				3C9ABA0D2229F18800174FA0 /* PostSubmitTestViewController.swift */,
+				3C9ABA112229F18E00174FA0 /* WaitForPlayerViewController.swift */,
+				BA330CF7218F0D580076325F /* VocabTableViewCell.swift */,
+				BA9552891FBBAA4E00363502 /* AppDelegate.swift */,
+				BA95528D1FBBAA4E00363502 /* Main.storyboard */,
+				BA9552CB1FBDFDC500363502 /* LoginViewController.swift */,
+				BA1B5E321FD64CAB004CADD6 /* TeacherDashboardViewController.swift */,
+				BA9552901FBBAA4E00363502 /* Assets.xcassets */,
+				BA9552921FBBAA4E00363502 /* LaunchScreen.storyboard */,
+				BA9552951FBBAA4E00363502 /* Info.plist */,
+			);
+			path = ELLAPP2017;
+			sourceTree = "<group>";
+		};
+		BA95529D1FBBAA4E00363502 /* ELLAPP2017Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BA95529E1FBBAA4E00363502 /* ELLAPP2017Tests.swift */,
+				BA9552A01FBBAA4E00363502 /* Info.plist */,
+			);
+			path = ELLAPP2017Tests;
+			sourceTree = "<group>";
+		};
+		BA9552A81FBBAA4E00363502 /* ELLAPP2017UITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA9552A91FBBAA4E00363502 /* ELLAPP2017UITests.swift */,
+				BA9552AB1FBBAA4E00363502 /* Info.plist */,
+			);
+			path = ELLAPP2017UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA9552851FBBAA4E00363502 /* ELLAPP2017 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA9552AE1FBBAA4E00363502 /* Build configuration list for PBXNativeTarget "ELLAPP2017" */;
+			buildPhases = (
+				48A8CFE6AA0E03D9A137B54A /* [CP] Check Pods Manifest.lock */,
+				BA9552821FBBAA4E00363502 /* Sources */,
+				BA9552831FBBAA4E00363502 /* Frameworks */,
+				BA9552841FBBAA4E00363502 /* Resources */,
+				FB6C760522FC2DF66203C2FF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ELLAPP2017;
+			productName = ELLAPP2017;
+			productReference = BA9552861FBBAA4E00363502 /* ELLAPP2017.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA9552991FBBAA4E00363502 /* ELLAPP2017Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA9552B11FBBAA4E00363502 /* Build configuration list for PBXNativeTarget "ELLAPP2017Tests" */;
+			buildPhases = (
+				89DD571F63C6DFE7E58A8DEC /* [CP] Check Pods Manifest.lock */,
+				BA9552961FBBAA4E00363502 /* Sources */,
+				BA9552971FBBAA4E00363502 /* Frameworks */,
+				BA9552981FBBAA4E00363502 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA95529C1FBBAA4E00363502 /* PBXTargetDependency */,
+			);
+			name = ELLAPP2017Tests;
+			productName = ELLAPP2017Tests;
+			productReference = BA95529A1FBBAA4E00363502 /* ELLAPP2017Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA9552A41FBBAA4E00363502 /* ELLAPP2017UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA9552B41FBBAA4E00363502 /* Build configuration list for PBXNativeTarget "ELLAPP2017UITests" */;
+			buildPhases = (
+				2BF58C8478C210CCB1B583A4 /* [CP] Check Pods Manifest.lock */,
+				BA9552A11FBBAA4E00363502 /* Sources */,
+				BA9552A21FBBAA4E00363502 /* Frameworks */,
+				BA9552A31FBBAA4E00363502 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA9552A71FBBAA4E00363502 /* PBXTargetDependency */,
+			);
+			name = ELLAPP2017UITests;
+			productName = ELLAPP2017UITests;
+			productReference = BA9552A51FBBAA4E00363502 /* ELLAPP2017UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA95527E1FBBAA4E00363502 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Ellokids;
+				TargetAttributes = {
+					BA9552851FBBAA4E00363502 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					BA9552991FBBAA4E00363502 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA9552851FBBAA4E00363502;
+					};
+					BA9552A41FBBAA4E00363502 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA9552851FBBAA4E00363502;
+					};
+				};
+			};
+			buildConfigurationList = BA9552811FBBAA4E00363502 /* Build configuration list for PBXProject "ELLAPP2017" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA95527D1FBBAA4E00363502;
+			productRefGroup = BA9552871FBBAA4E00363502 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA9552851FBBAA4E00363502 /* ELLAPP2017 */,
+				BA9552991FBBAA4E00363502 /* ELLAPP2017Tests */,
+				BA9552A41FBBAA4E00363502 /* ELLAPP2017UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA9552841FBBAA4E00363502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9552941FBBAA4E00363502 /* LaunchScreen.storyboard in Resources */,
+				BA330D10218F0D590076325F /* KGWhattheTeacherWants.ttf in Resources */,
+				BA330D19218F0D590076325F /* KGDefyingGravityBounce.ttf in Resources */,
+				BA9552911FBBAA4E00363502 /* Assets.xcassets in Resources */,
+				BA330D15218F0D590076325F /* KGMissKindergarten.ttf in Resources */,
+				BA95528F1FBBAA4E00363502 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9552981FBBAA4E00363502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9552A31FBBAA4E00363502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BF58C8478C210CCB1B583A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ELLAPP2017UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48A8CFE6AA0E03D9A137B54A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ELLAPP2017-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89DD571F63C6DFE7E58A8DEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ELLAPP2017Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB6C760522FC2DF66203C2FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ELLAPP2017/Pods-ELLAPP2017-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/HydraAsync/Hydra.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hydra.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ELLAPP2017/Pods-ELLAPP2017-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA9552821FBBAA4E00363502 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C9ABA162229F18F00174FA0 /* WaitForPlayerViewController.swift in Sources */,
+				BA330D05218F0D590076325F /* Books.swift in Sources */,
+				BA330D07218F0D590076325F /* BookCollectionViewCell.swift in Sources */,
+				BA330D06218F0D590076325F /* GlobalLibraryTableViewCell.swift in Sources */,
+				BA330D1B218F0D590076325F /* ManageProfileViewController.swift in Sources */,
+				BA330D14218F0D590076325F /* GlobalLibraryViewController.swift in Sources */,
+				BA9552CC1FBDFDC500363502 /* LoginViewController.swift in Sources */,
+				BA330D0F218F0D590076325F /* LocalLibraryViewController.swift in Sources */,
+				BA330D1A218F0D590076325F /* ManageClassesViewController.swift in Sources */,
+				BA330D09218F0D590076325F /* Results.swift in Sources */,
+				3C9ABA132229F18F00174FA0 /* PlayerScoresViewController.swift in Sources */,
+				BA330D18218F0D590076325F /* Book.swift in Sources */,
+				BA330D0D218F0D590076325F /* Users.swift in Sources */,
+				BA330D13218F0D590076325F /* BookInfoViewController.swift in Sources */,
+				BA330D08218F0D590076325F /* Database.swift in Sources */,
+				3C9ABA152229F18F00174FA0 /* GuessDoodleViewController.swift in Sources */,
+				BA1B5E331FD64CAB004CADD6 /* TeacherDashboardViewController.swift in Sources */,
+				BA330D0E218F0D590076325F /* VocabTableViewCell.swift in Sources */,
+				BA330D0C218F0D590076325F /* DoodleGameViewController.swift in Sources */,
+				BA330D0A218F0D590076325F /* StudentInfoViewController.swift in Sources */,
+				BA95528A1FBBAA4E00363502 /* AppDelegate.swift in Sources */,
+				BA330D16218F0D590076325F /* LocalLibraryTableViewCell.swift in Sources */,
+				BA330D0B218F0D590076325F /* StudentTableViewCell.swift in Sources */,
+				BA330D11218F0D590076325F /* ManageClassesTableViewCell.swift in Sources */,
+				BA330D12218F0D590076325F /* BooksViewController.swift in Sources */,
+				3C9ABA122229F18F00174FA0 /* PostSubmitTestViewController.swift in Sources */,
+				BA330D17218F0D590076325F /* Classrooms.swift in Sources */,
+				3C9ABA142229F18F00174FA0 /* LobbyViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9552961FBBAA4E00363502 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA95529F1FBBAA4E00363502 /* ELLAPP2017Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9552A11FBBAA4E00363502 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9552AA1FBBAA4E00363502 /* ELLAPP2017UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA95529C1FBBAA4E00363502 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA9552851FBBAA4E00363502 /* ELLAPP2017 */;
+			targetProxy = BA95529B1FBBAA4E00363502 /* PBXContainerItemProxy */;
+		};
+		BA9552A71FBBAA4E00363502 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA9552851FBBAA4E00363502 /* ELLAPP2017 */;
+			targetProxy = BA9552A61FBBAA4E00363502 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA95528D1FBBAA4E00363502 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA95528E1FBBAA4E00363502 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA9552921FBBAA4E00363502 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA9552931FBBAA4E00363502 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA9552AC1FBBAA4E00363502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA9552AD1FBBAA4E00363502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA9552AF1FBBAA4E00363502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEDA6D025772236A7FD9BA9B /* Pods-ELLAPP2017.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AP2L943C3T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Parse-iOS",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ELLAPP2017/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = elloquent.ELLAPP2017;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA9552B01FBBAA4E00363502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C25ED22B8FAEFA545A95917 /* Pods-ELLAPP2017.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AP2L943C3T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Parse-iOS",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ELLAPP2017/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = elloquent.ELLAPP2017;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BA9552B21FBBAA4E00363502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77BAB7F6BC4C23658DAEC090 /* Pods-ELLAPP2017Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7LK9ZEA9L;
+				INFOPLIST_FILE = ELLAPP2017Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nponce.ELLAPP2017Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ELLAPP2017.app/ELLAPP2017";
+			};
+			name = Debug;
+		};
+		BA9552B31FBBAA4E00363502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2D51286E61CA5383FB8C04E /* Pods-ELLAPP2017Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7LK9ZEA9L;
+				INFOPLIST_FILE = ELLAPP2017Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nponce.ELLAPP2017Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ELLAPP2017.app/ELLAPP2017";
+			};
+			name = Release;
+		};
+		BA9552B51FBBAA4E00363502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35EE3C3EB0C10B1E8CAFDFB5 /* Pods-ELLAPP2017UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7LK9ZEA9L;
+				INFOPLIST_FILE = ELLAPP2017UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nponce.ELLAPP2017UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ELLAPP2017;
+			};
+			name = Debug;
+		};
+		BA9552B61FBBAA4E00363502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C91467A78CA459289262DC /* Pods-ELLAPP2017UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7LK9ZEA9L;
+				INFOPLIST_FILE = ELLAPP2017UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nponce.ELLAPP2017UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ELLAPP2017;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA9552811FBBAA4E00363502 /* Build configuration list for PBXProject "ELLAPP2017" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA9552AC1FBBAA4E00363502 /* Debug */,
+				BA9552AD1FBBAA4E00363502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA9552AE1FBBAA4E00363502 /* Build configuration list for PBXNativeTarget "ELLAPP2017" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA9552AF1FBBAA4E00363502 /* Debug */,
+				BA9552B01FBBAA4E00363502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA9552B11FBBAA4E00363502 /* Build configuration list for PBXNativeTarget "ELLAPP2017Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA9552B21FBBAA4E00363502 /* Debug */,
+				BA9552B31FBBAA4E00363502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA9552B41FBBAA4E00363502 /* Build configuration list for PBXNativeTarget "ELLAPP2017UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA9552B51FBBAA4E00363502 /* Debug */,
+				BA9552B61FBBAA4E00363502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA95527E1FBBAA4E00363502 /* Project object */;
+}
