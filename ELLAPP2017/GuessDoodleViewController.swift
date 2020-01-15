@@ -31,6 +31,7 @@ class GuessDoodleViewController: UIViewController {
     var DrawingFile = PFFile(data: Data())
     var someData = [PFObject]()
     var players = [String]()
+    var score = 0
     
     // start 3/8
     var correctAnswer = false
@@ -68,6 +69,7 @@ class GuessDoodleViewController: UIViewController {
         // Get the array of user's objectId's in the game
         players = currentUser["PictionaryGame"] as! [String]
         print("players: ", players) //added
+        print("number of players: ", players.count)
         n = 0
         var str = "Word Bank: "
         while (n < players.count)
@@ -224,6 +226,7 @@ class GuessDoodleViewController: UIViewController {
         if userSubmission == "\(String(describing: testString))" {
             displayResult.isHidden = false
             displayResult.text = "Correct Answer"
+            score += 1
         }
         else{
             displayResult.isHidden = false
@@ -235,6 +238,22 @@ class GuessDoodleViewController: UIViewController {
         {
             viewScore.isHidden = false
             viewScore.isEnabled = true
+            if(score == 3)
+            {
+                currentUser["Score"] = "100%"
+            }
+            else if(score == 2)
+            {
+                currentUser["Score"] = "67%"
+            }
+            else if(score == 1)
+            {
+                currentUser["Score"] = "33%"
+            }
+            else
+            {
+                currentUser["Score"] = "0%"
+            }
             numGuesses = 1
         }
         

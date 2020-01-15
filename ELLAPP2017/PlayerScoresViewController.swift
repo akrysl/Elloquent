@@ -11,14 +11,19 @@ import Parse
 
 class PlayerScoresViewController: UIViewController {
     
+    
+    @IBOutlet weak var playerName: UILabel!
+    
     @IBOutlet weak var playerScore: UILabel!
+    
     var currentUser = PFUser.current()!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        //let score = currentUser["Score"]
+        playerName.text = currentUser.username! + "!"
+        playerScore.text = currentUser["Score"] as? String
     }
     
     @IBAction func playAgain(_ sender: Any) {
