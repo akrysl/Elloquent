@@ -240,19 +240,19 @@ class GuessDoodleViewController: UIViewController {
             viewScore.isEnabled = true
             if(score == 3)
             {
-                currentUser["Score"] = "100%"
+                currentUser["Score"] = "3 out of 3"
             }
             else if(score == 2)
             {
-                currentUser["Score"] = "67%"
+                currentUser["Score"] = "2 out of 3"
             }
             else if(score == 1)
             {
-                currentUser["Score"] = "33%"
+                currentUser["Score"] = "1 out of 3"
             }
             else
             {
-                currentUser["Score"] = "0%"
+                currentUser["Score"] = "0 out of 3"
             }
             numGuesses = 1
         }

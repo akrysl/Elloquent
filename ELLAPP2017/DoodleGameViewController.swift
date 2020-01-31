@@ -24,7 +24,7 @@ class DoodleGameViewController: UIViewController {
     @IBOutlet weak var tempImageView: UIImageView!
     @IBOutlet weak var vocabLabel: UILabel!
     
-    // edits from 01 / 29
+    // edits from 01 / 2
     //time left
     @IBOutlet weak var timeLabel: UILabel!
     //submit button
@@ -72,6 +72,7 @@ class DoodleGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("first word in list: ", words[0])
         // Do any additional setup after loading the view, typically from a nib.
         
         // GRABB's pop-up is not supported by the Ellokids - NAP
@@ -105,7 +106,6 @@ class DoodleGameViewController: UIViewController {
 
         startTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(DoodleGameViewController.startGame), userInfo: nil, repeats: true)
         // edits from 01 / 29
-        
         if (words.count > 0) {
             currentWord = Int(arc4random_uniform(UInt32(words.count)))
             vocabLabel.text = words[currentWord]
