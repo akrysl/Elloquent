@@ -14,6 +14,9 @@ class BooksViewController: UIViewController {
     @IBOutlet weak var booksCollectionView: UICollectionView!
     @IBOutlet weak var nameLabel: UILabel!
     
+    @IBOutlet weak var ManageProfile: UIButton!
+    
+    
     /* Array of pulled books */
     var books = [Book]()
     var bookArray = [PFObject]()
@@ -97,6 +100,10 @@ class BooksViewController: UIViewController {
 //            destVC?.words.append(self.books[selectedIndexPath.item].title)
             destVC?.words = self.vocab
         }
+    }
+    
+    @IBAction func goToManageProfile(_ sender: Any) {
+        //self.performSegue(withIdentifier: "sw_teacher_profile", sender: nil)
     }
 }
 

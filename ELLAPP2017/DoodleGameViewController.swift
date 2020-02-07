@@ -72,7 +72,7 @@ class DoodleGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("first word in list: ", words[0])
+        //print("first word in list: ", words[0])
         // Do any additional setup after loading the view, typically from a nib.
         
         // GRABB's pop-up is not supported by the Ellokids - NAP
@@ -298,7 +298,8 @@ class DoodleGameViewController: UIViewController {
     @objc func timeToMoveOn() {
         takeshot(self)
         postTimerUpdates()
-        self.performSegue(withIdentifier: "PostSubmitScreen", sender: self)
+        //self.performSegue(withIdentifier: "guessDrawing", sender: self)
+        //self.performSegue(withIdentifier: "PostSubmitScreen", sender: self)
     }
     // edits from 01/ 29
     
@@ -376,7 +377,8 @@ class DoodleGameViewController: UIViewController {
         print("update database")
         Database().updateToDatabase(object: currentUser).then{result in
             print("result update to database doodle game",result) }
-        self.performSegue(withIdentifier: "PostSubmitScreen", sender: self)
+        self.performSegue(withIdentifier: "guessDrawing", sender: self)
+        //self.performSegue(withIdentifier: "PostSubmitScreen", sender: self)
     }
     
     @IBAction func SubmitDrawing(_ sender: Any) {

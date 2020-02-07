@@ -13,7 +13,7 @@ class PostSubmitTestViewController: UIViewController {
     
     
     var waitInt = 10
-    var waitTimer = Timer()
+//    var waitTimer = Timer()
     
 
     
@@ -26,9 +26,9 @@ class PostSubmitTestViewController: UIViewController {
 
         // Do any additional setup after loading the view.
 
-        waitTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(PostSubmitTestViewController.waitCount), userInfo: nil, repeats: true)
+//        waitTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(PostSubmitTestViewController.waitCount), userInfo: nil, repeats: true)
         
-        _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timeToMoveOn), userInfo: nil, repeats: false)
+//        _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timeToMoveOn), userInfo: nil, repeats: false)
         
         print("post submit test view controller screen")
         timeToMoveOn()
@@ -95,20 +95,20 @@ class PostSubmitTestViewController: UIViewController {
 //        }
 //    }
 
-    @objc func waitCount()
-    {
-        waitInt -= 1
-        if (waitInt == 0)
-        {
-            waitTimer.invalidate()
-        }
-    }
+//    @objc func waitCount()
+//    {
+//        waitInt -= 1
+//        if (waitInt == 0)
+//        {
+//            waitTimer.invalidate()
+//        }
+//    }
     
     // Makes players wait an alloted amount of time after submitting their drawings before
     // segueing into a new scene
     
-    @objc func timeToMoveOn() {
-        self.performSegue(withIdentifier: "guessDrawing", sender: self)
+   @objc func timeToMoveOn() {
+       //self.performSegue(withIdentifier: "guessDrawing", sender: self)
     }
 
     /*

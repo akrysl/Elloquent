@@ -82,7 +82,7 @@ class GuessDoodleViewController: UIViewController {
                 if error == nil {
                     print("User: ", newUser!["username"] as! String)
                     // add the vocab word to the word bank
-                    str += newUser?["VocabWord"] as! String + " "
+                    str += newUser?["VocabWord"] as! String + ", "
                     self.wordBank.text = str
                 }
             }
