@@ -153,13 +153,15 @@ class Classrooms{
     // Adds a user to a classroom
     func addUserToClassroom(user: PFUser, classroom: PFObject) -> Promise<Bool> {
         return Promise<Bool>(in: .background, { resolve, reject, _ in
+            let c = PFObject(withoutDataWithClassName: "_User", objectId: classroom.objectId)
+            let u = PFObject(withoutDataWithClassName: "Classroom", objectId: classroom.objectId)
             let intermediateQuery = PFQuery(className: "ClassroomUserIntermediate")
-            intermediateQuery.whereKey("classroom", equalTo: classroom)
-            intermediateQuery.whereKey("user", equalTo: user)
+            intermediateQuery.whereKey("classroom", equalTo: c)//classroom)
+            intermediateQuery.whereKey("user", equalTo: u)//ser)
             
             let newIntermediate = PFObject(className: "ClassroomUserIntermediate")
-            newIntermediate["classroom"] = classroom
-            newIntermediate["user"] = user
+            newIntermediate["classroom"] = c //classroom
+            newIntermediate["user"] = u //user
             
             Database().activateIntermediate(intermediateQuery: intermediateQuery, newIntermediate: newIntermediate).then { result in
                 resolve(result)

@@ -36,8 +36,9 @@ class ManageClassesViewController: UIViewController {
         // Populate array of available Classrooms for a user
         Classrooms().getClassrooms(user: PFUser.current()!).then{ classrooms in
             self.groups = classrooms
+            //print("first classroom id: ", classrooms[0].objectId!)
             self.classTableView.reloadData()
-            self.updateClassStudents(classroom: self.groups[0]); // Assumes no one will not have groups
+            self.updateClassStudents(classroom: self.groups[0]) // Assumes no one will not have groups
             self.studentTableView.reloadData()
             print("Fetched the classrooms")
             }.catch{ error in
@@ -72,6 +73,11 @@ class ManageClassesViewController: UIViewController {
         if(segue.identifier == "sw_manage_to_student") {
             let destVC = segue.destination as? StudentInfoViewController
             destVC?.currStudent = self.students[self.studentTableView.indexPathForSelectedRow!.row]
+        }
+        if segue.identifier == "add_student" {
+            let destVC = segue.destination as? PostSubmitTestViewController
+            
+            destVC?.classrooms = self.groups
         }
      }
 }

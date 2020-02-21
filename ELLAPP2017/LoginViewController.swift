@@ -57,6 +57,12 @@ class LoginViewController: UIViewController {
                 self.performSegue(withIdentifier: "sw_student_mybooks", sender: nil)
             }
             else {
+                Users().getRoleFromName(role: "student").then { roleObject in
+                    Users().addRole(user: userObj, role: roleObject).then { res in
+                        print("added student role to user")
+                        self.performSegue(withIdentifier: "sw_student_mybooks", sender: nil)
+                    }
+                }
                 //TODO: user belongs to no roles...? (or an error getting roles)
             }
         }
