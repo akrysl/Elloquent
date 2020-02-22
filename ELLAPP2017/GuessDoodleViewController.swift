@@ -71,7 +71,7 @@ class GuessDoodleViewController: UIViewController {
         print("players: ", players) //added
         print("number of players: ", players.count)
         n = 0
-        var str = "Word Bank: "
+        var str1 = ""
         while (n < players.count)
         {
             let ID = players[n]
@@ -82,11 +82,11 @@ class GuessDoodleViewController: UIViewController {
                 if error == nil {
                     print("User: ", newUser!["username"] as! String)
                     // add the vocab word to the word bank
-                    str += newUser?["VocabWord"] as! String + ", "
-                    self.wordBank.text = str
+                    str1 += newUser?["VocabWord"] as! String + "    "
+                    self.wordBank.text = str1
                 }
             }
-            n = n + 1
+            self.n = self.n + 1
         }
         // 03/09
         // Check if the first user in the array is the current user

@@ -12,8 +12,6 @@ import Parse
 class PlayerScoresViewController: UIViewController {
     
     
-    @IBOutlet weak var playerName: UILabel!
-    
     @IBOutlet weak var playerScore: UILabel!
     
     var currentUser = PFUser.current()!
@@ -22,7 +20,7 @@ class PlayerScoresViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        playerName.text = currentUser.username! + "!"
+       // playerName.text = currentUser.username! + "!"
         playerScore.text = currentUser["Score"] as? String
     }
     

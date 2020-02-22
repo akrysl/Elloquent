@@ -24,11 +24,6 @@ class DoodleGameViewController: UIViewController {
     @IBOutlet weak var tempImageView: UIImageView!
     @IBOutlet weak var vocabLabel: UILabel!
     
-    // edits from 01 / 2
-    //time left
-    @IBOutlet weak var timeLabel: UILabel!
-    //submit button
-    @IBOutlet weak var button: UIButton!
     // edits from 01 / 29
     
     var words = [String]()
@@ -45,16 +40,16 @@ class DoodleGameViewController: UIViewController {
     // edits from 01 / 29
     var gameInt = 60
     var startInt = 3
-    var gameTimer = Timer()
-    var startTimer = Timer()
+    //var gameTimer = Timer()
+    //var startTimer = Timer()
     //edits from 01 / 29
     
     // start 3/4
-    var timer = Timer()
+    //var timer = Timer()
     // end 3/4
     
     // 03/08
-    var nextSceneTimer = Timer()
+    //var nextSceneTimer = Timer()
     
     let colors: [(CGFloat, CGFloat, CGFloat)] = [
         (0, 0, 0),
@@ -94,17 +89,18 @@ class DoodleGameViewController: UIViewController {
         
         // edits from 01 / 29
         gameInt = 60
-        timeLabel.text = String(gameInt)
+        //timeLabel.text = String(gameInt)
         startInt = 3
-        button.setTitle(String(startInt), for: .normal)
-        button.isEnabled = false
+        //button.setTitle(String(startInt), for: .normal)
+        //button.isEnabled = false
         submit.isEnabled = true
         
         // start 3/4
-        timer = Timer.scheduledTimer(timeInterval: 64.0, target: self, selector: #selector(timeToMoveOn), userInfo: nil, repeats: false)
+        /*
+        timer = Timer.scheduledTimer(timeInterval: 64.0, target: self, selector: #selector(timeToMoveOn), userInfo: nil, repeats: false)*/
         // end 3/4
-
-        startTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(DoodleGameViewController.startGame), userInfo: nil, repeats: true)
+        /*
+        startTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(DoodleGameViewController.startGame), userInfo: nil, repeats: true)*/
         // edits from 01 / 29
         if (words.count > 0) {
             currentWord = Int(arc4random_uniform(UInt32(words.count)))
@@ -269,29 +265,29 @@ class DoodleGameViewController: UIViewController {
     @objc func startGame()
     {
         startInt -= 1
-        button.setTitle(String(startInt), for: .normal)
+        //button.setTitle(String(startInt), for: .normal)
         
         if startInt == 0
         {
-            startTimer.invalidate()
-            button.setTitle("GO go go, DRAW before time runs out!!", for: .normal)
-            button.isEnabled = false
+            //startTimer.invalidate()
+            //button.setTitle("GO go go, DRAW before time runs out!!", for: .normal)
+            //button.isEnabled = false
             submit.isEnabled = true
             //insert submit button code
-            
-            gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(DoodleGameViewController.game), userInfo: nil, repeats: true)
+            /*
+            gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(DoodleGameViewController.game), userInfo: nil, repeats: true)*/
         }
     }
-    
+
     @objc func game()
     {
         gameInt -= 1
-        timeLabel.text = String(gameInt)
+        //timeLabel.text = String(gameInt)
         
         if gameInt == 0
         {
-            gameTimer.invalidate()
-            button.isEnabled = false
+            //gameTimer.invalidate()
+            //button.isEnabled = false
         }
     }
     
@@ -371,7 +367,7 @@ class DoodleGameViewController: UIViewController {
     // Will be called after Timer hits 0 seconds
     @objc func postTimerUpdates()
     {
-        timer.invalidate()
+        //timer.invalidate()
         print("click submit")
         print("after takeshot")
         print("update database")
