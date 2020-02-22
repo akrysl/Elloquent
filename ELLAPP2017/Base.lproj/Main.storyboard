@@ -298,11 +298,19 @@
             <objects>
                 <viewController id="xF6-Ga-bQL" customClass="ManageClassesViewController" customModule="ELLAPP2017" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="TdQ-mR-0oW">
+<<<<<<< HEAD
                         <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage Classes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zia-jo-VSN">
                                 <rect key="frame" x="0.0" y="0.0" width="712" height="114"/>
+=======
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage Classes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zia-jo-VSN">
+                                <rect key="frame" x="0.0" y="70" width="768" height="114"/>
+>>>>>>> efdbc2daf08b518b1abc87324b72a81e3598ed08
                                 <color key="backgroundColor" red="0.52156862749999999" green="0.83921568629999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="114" id="4bf-fn-tG7"/>
@@ -312,7 +320,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gVS-d9-uJa">
+<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="122" width="712" height="132"/>
+=======
+                                <rect key="frame" x="0.0" y="192" width="768" height="132"/>
+>>>>>>> efdbc2daf08b518b1abc87324b72a81e3598ed08
                                 <color key="backgroundColor" red="0.66666666669999997" green="0.88235294119999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="132" id="EAD-y2-Fgc"/>
@@ -366,7 +378,11 @@
                                 </connections>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="03Q-O7-PUm">
+<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="262" width="712" height="786"/>
+=======
+                                <rect key="frame" x="0.0" y="332" width="768" height="786"/>
+>>>>>>> efdbc2daf08b518b1abc87324b72a81e3598ed08
                                 <color key="backgroundColor" red="0.66666666669999997" green="0.88235294119999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="786" id="DYq-Hm-PFU"/>
@@ -425,7 +441,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onClickAddStudent:" destination="xF6-Ga-bQL" eventType="touchUpInside" id="vQa-K4-yKT"/>
-                                    <segue destination="UPG-Ru-wej" kind="show" id="bgT-e0-gDU"/>
+                                    <segue destination="UPG-Ru-wej" kind="show" identifier="add_student" id="bgT-e0-gDU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -465,7 +481,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IdO-nh-NLJ" customClass="PFImageView">
+<<<<<<< HEAD
                                 <rect key="frame" x="20" y="22" width="300" height="300"/>
+=======
+                                <rect key="frame" x="20" y="92" width="300" height="300"/>
+>>>>>>> efdbc2daf08b518b1abc87324b72a81e3598ed08
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="511-TO-Oid"/>
                                     <constraint firstAttribute="height" constant="300" id="NFJ-XP-sE1"/>
@@ -1637,6 +1657,7 @@
                                 </state>
                                 <connections>
                                     <action selector="submitNewStudent:" destination="UPG-Ru-wej" eventType="touchUpInside" id="d2P-oU-97C"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="vBj-5L-lqy"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Student to Classroom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exb-v4-dgg">
@@ -1656,7 +1677,6 @@
                         <outlet property="gradeLevel" destination="aRL-tt-L4t" id="mXu-dR-TdP"/>
                         <outlet property="password" destination="yo7-gV-pzg" id="LG9-4g-wDu"/>
                         <outlet property="username" destination="FJk-SK-Fa0" id="PIu-n2-pLq"/>
-                        <segue destination="xF6-Ga-bQL" kind="show" identifier="backToManageClassroom" id="Kld-Lp-Oe8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ky-CL-Lxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1686,9 +1706,13 @@
         <image name="lightturq" width="2100" height="1500"/>
     </resources>
     <inferredMetricsTieBreakers>
+<<<<<<< HEAD
         <segue reference="ZeT-Ek-1Rc"/>
+=======
+        <segue reference="nzL-Wg-N84"/>
+        <segue reference="Gio-ww-pCk"/>
+>>>>>>> efdbc2daf08b518b1abc87324b72a81e3598ed08
         <segue reference="tOh-sx-Sbi"/>
         <segue reference="OS8-lF-M2u"/>
-        <segue reference="Kld-Lp-Oe8"/>
     </inferredMetricsTieBreakers>
 </document>

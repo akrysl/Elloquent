@@ -13,6 +13,7 @@ import Hydra
 
 class PostSubmitTestViewController: UIViewController {
     
+    var classrooms = [PFObject]()
     
     @IBOutlet weak var username: UITextField!
     
@@ -28,6 +29,7 @@ class PostSubmitTestViewController: UIViewController {
     var imagePicker = UIImagePickerController()
     
     var currentUser = PFUser.current()!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,10 +52,8 @@ class PostSubmitTestViewController: UIViewController {
         print(classroom.text!)
         print(englishLevel.text!)
         print(gradeLevel.text!)
-        //createStudent(profilePic: userImageFile!, username: username.text!, password: password.text!, gradeLevel: gradeLevel.text!, englishLevel: englishLevel.text!, Classroom: classroom.text!)
-        _ = Users().createUserWithRole(username: username.text!, password: password.text!, role: "student")
-        //Classrooms().addUserToClassroom(user: newStudent, classroom: c.result)
-        self.performSegue(withIdentifier: "backToManageClassroom", sender: self)
+        createStudent(profilePic: userImageFile!, username: username.text!, password: password.text!, gradeLevel: gradeLevel.text!, englishLevel: englishLevel.text!, Classroom: classroom.text!)
+        //self.performSegue(withIdentifier: "backToLogin", sender: self)
     }
 
     @IBAction func addProfilePic(_ sender: UIButton) {
@@ -118,11 +118,9 @@ class PostSubmitTestViewController: UIViewController {
         print("in createStudent function")
         let newUser = PFUser(className: "_User")
         newUser["username"] = username
-        //newUser.username = username
         newUser["password"] = password
-        //newUser.password = password
         newUser["isActive"] = true
-        newUser["profilePic"] = profilePic
+        ///newUser["profilePic"] = profilePic
         newUser["gradeLvl"] = gradeLevel
         newUser["englishLvl"] = englishLevel
         // New users should have public read/write permissions
@@ -130,65 +128,64 @@ class PostSubmitTestViewController: UIViewController {
         acl.getPublicReadAccess = true
         acl.getPublicWriteAccess = true
         newUser.acl = acl
-        //newUser.signUpInBackground()
-        //newUser.saveInBackground()
-        // Other fields can be set just like any other PFObject,
-        // like this: user["attribute"] = "its value"
-        // If this field does not exists, it will be automatically created
-        //Users().signupUser(user: newUser).then { result in
-        //    Database().updateToDatabase(object: newUser).then{res in
-        //        print("add new user to database")
-                
-        //    }
-        //Database().updateToDatabase(object: newUser).then{result in
-        //    print("result update to database new student",result)
-                
-   //     }
- //       })
- //  }
-        //newUser.signUpInBackgroundWithBlock //{
-        //    (succeeded: Bool, error: NSError?) -> Void in
-        //    if let error = error {
-        //    let errorString = error.userInfo["error"] as? NSString
-            // Show the errorString somewhere and let the user try again.
-        //    } else {
-            // Hooray! Let them use the app now.
-        //    }
-        //    } as! PFBooleanResultBlock as! PFBooleanResultBlock
-        // Add to the database
-        //Users().signupUser(user: newUser).then { result in
-        //    Database().updateToDatabase(object: newUser).then{ res in
-        //        resolve(newUser)
-            // Add to the classroom
-        //Classrooms().addUserToClassroom(user: newUser, classroom: c)
-        //_ = getClassroomFromName(user: newUser, name: Classroom)
-        //        }
-        //    }
-        //})
+
+        do{
+            try(newUser.signUp())
+            getClassroomFromName(user: newUser, name: Classroom)
+            //try(newUser.signUp())
+        }
+        catch{
+            print("failed to sign up user")
+        }
     }
     
-    func getClassroomFromName(user: PFUser, name: String) -> Promise<PFObject> {
-        print("in getClassroomFromName function")
-        return Promise<PFObject>(in: .background, { resolve, reject, _ in
-            // Create the query
-        let userQuery = PFQuery(className: "_Classroom")
-        userQuery.whereKey("name", equalTo: name)
-        userQuery.whereKey("isActive", equalTo: true)
-        
-        // Query it
-        Database().simpleQuery(query: userQuery).then{ res in
-            // If there isn't a user, return an error
-            print("queried database")
-            if (res.count == 0){
-                _ = NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey : "Classroom not found"])
-                return
-                }
-                resolve(res[0] as! PFUser)
-            print("found classroom")
-            _ = Classrooms().addUserToClassroom(user: user, classroom: res[0])
-            }
-        })
+    
+    func addToClassroom(u: PFUser, c: PFObject){
+        print("in addToClassroom function")
+        let newEntry = PFObject(className: "ClassroomUserIntermediate")
+        newEntry["user"] = PFObject(withoutDataWithClassName: "_User", objectId: u.objectId)
+        newEntry["classroom"] = PFObject(withoutDataWithClassName: "Classroom", objectId: c.objectId)
+        let acl = PFACL()
+        acl.getPublicReadAccess = true
+        acl.getPublicWriteAccess = true
+        newEntry.acl = acl
+        newEntry["isTeacher"] = false
+        newEntry["isActive"] = true
+        Database().updateToDatabase(object: newEntry).then{ _ in
+            print("added to intermediate database")
+            }.catch{_ in
+                print("could not add to intermediate table")
+        }
     }
+    
+    func getClassroomFromName(user: PFUser, name: String) {
+        print("in getClassroomFromName function")
+        var i = 0
+        while(i < classrooms.count)
+        {
+            let str = classrooms[i]["name"] as!String
+            print("classroom comparison: ", str)
+            print("classroom object id: ", classrooms[i].objectId!)
+            if(str == name)
+            {
+                print("found classroom")
+                addToClassroom(u: user, c: classrooms[i])
+                user["Classroom"] = PFObject(withoutDataWithClassName: "Classroom", objectId: classrooms[i].objectId)
+                Database().updateToDatabase(object: user).then{_ in
+                    print("successfully updated student's classroom attribute")
+                    }.catch{_ in 
+                        print("failed to update student's classroom")
+                }
+                //Users().getRoleFromName(role: "student").then { role in
+                //    Users().addRole(user: user, role: role).then{ _ in
+                //        print("added student role to user")
+                //    }}
+                return
+            }
+            i += 1
+        }
+    }
+
     
     /*
     // MARK: - Navigation
